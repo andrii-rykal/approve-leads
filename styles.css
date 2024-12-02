@@ -79,6 +79,8 @@ input {
 
 /* #endregion */
 
+/* #region main-styles */
+
 html {
   font-family: var(--font-family);
   font-weight: 400;
@@ -102,6 +104,8 @@ section {
   text-transform: uppercase;
   color: var(--color-light-gray);
 }
+
+/* #endregion */
 
 /* #region header */
 
@@ -296,7 +300,7 @@ html:has(#menu:checked) {
   gap: 30px;
 }
 
-.hero-content form > button {
+.hero-content form > a {
   align-self: start;
   background-color: var(--color-bg-button);
   padding: 16px 32px;
@@ -305,7 +309,15 @@ html:has(#menu:checked) {
   font-size: 18px;
   line-height: 133%;
   color: var(--color-white);
+  border: 1px solid transparent;
   transition: background-color 0.4s;
+}
+
+
+.hero-content form a:hover {
+  color: var(--color-bg-button);
+  background-color: var(--color-bg-header);
+  border-color: var(--color-border-button);
 }
 
 .search-container input {
@@ -340,7 +352,7 @@ html:has(#menu:checked) {
   transition: background-color 0.4s;
 }
 
-.hero-content button:hover {
+.search-container button:hover {
   background-color: var(--color-dark-black);
 }
 
@@ -1002,15 +1014,6 @@ footer {
     align-self: start;
   }
 
-  .buy-buttons {
-    gap: 24px;
-  }
-
-  .buy-buttons button {
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-
   /* #endregion */
 
   /* #region brends */
@@ -1059,6 +1062,15 @@ footer {
   }
 
   /* #endregion */
+
+  .buy-buttons {
+    gap: 24px;
+  }
+
+  .buy-buttons button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
 
   .beauty-content h2 {
     font-size: 56px;
